@@ -1,0 +1,15 @@
+app:
+  name: flomickl-poi-map-app
+  namespace: flomickl
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/flomickl-frontend
+  org: rhdh23-demo
+  name: flomickl-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: flomickl/poi-map-app
+  tag: latest
